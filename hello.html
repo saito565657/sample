@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+	<?php require_once('./news/wp-load.php'); ?>
+  <title>hello</title>
+  
+  <!-- main css -->
+<link rel="stylesheet" href="css/style.css" media="screen and (min-device-width:481px)">
+<link rel="stylesheet" href="css/sp.css" media="only screen and (max-device-width:480px)">
+  <!-- Facebook og -->
+		<meta property="og:title" content="自律神経失調症の治療は和光市マッサージ・整体のあせろら整体院"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="http://和光市マッサージ.net/"/>
+		<meta property="og:image" content=""/>
+		<meta property="og:site_name" content="あせろら整体院"/>
+		<meta property="og:description" content="自律神経失調症の治療は和光市のあせろら整体院"/>
+		<meta property="fb:app_id" content="appid"/>
+
+		<!-- meta name-->
+		<meta name="keywords" content="自律神経失調症,肩こり,うつ病,整体,マッサージ"/>
+		<meta name="description" content="自律神経失調症の治療は和光市マッサージ・整体のあせろら整体院。深層筋肉を緩め、流れを正常化させます。肩こり・首こり・腰痛のケアにも定評があります。"/>
+		<meta http-equiv="content-style-type" content="text/css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	
+	<!-- トップナビ-->
+<script>
+    $(function() {
+        var $header = $('#top-head');
+        // Nav Fixed
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 250) {
+                $header.addClass('fixed');
+            } else {
+                $header.removeClass('fixed');
+            }
+        });
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
+    });
+  </script>
+	
+	<!-- アコーディオン-->
+<script>
+	$(function(){
+		$("#acord dt").on("click", function(){
+				$(this).next(). slideToggle();
+	});
+		});
+</script>
+	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111596400-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111596400-1');
+</script>
+	
+</head>
+<body>
+<div id="container">
+
+  <div id="pcheader">
+    <h1>自律神経失調症の改善は和光市マッサージ・整体のあせろら整体院。<br>
+      何人もの自律神経失調症を改善してきました。</h1>
+    <p class="mail"><a href="mailto:"></a></p>
+<div id="logo">  
+  <a href=""><img src="images/mv.jpg" alt="和光市マッサージ・整体のあせろら整体院" class="logo"></a>
+  <div id="gnavi">
+    <ul id="nav">
+     	<li><a href="http://和光市マッサージ.net/">ホーム</a></li>
+		<li><a href="/voice/">お客様の声</a></li>
+		<li><a href="/profile/">プロフィール</a></li>
+		<li><a href="/access/">料金・道案内</a></li>
+		<li><a href="/faq/">よくある質問</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+
+   
+ <header id="top-head">
+  <div class="inner">
+    <div id="mobile-head">
+      <h1 class="logo"><a href="#"><img src="images/aseroralogosp.jpg" class="ls"></a></h1>
+      <div id="nav-toggle">
+          <div>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+    </div><!---mobile-head end -->
+    <nav id="global-nav" role="navigation">
+      <div id="gnav-container" class="for_sp">
+        <ul id="gnav-ul" class="clearfix">
+          <li class="home"><a href="http://和光市マッサージ.net/">ホーム</a></li>
+          <li><a href="/voice/">お客様の声</a></li>
+          <li><a href="/profile/">プロフィール</a></li>
+		<li><a href="/access/">料金・道案内</a></li>
+		<li><a href="/faq/">よくある質問</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div><!---inner end------>
+</header>
+
+
+<div id="content">
+
+hello
+</div>
+	
+<!--<div>
+	<h3>■新着記事</h3>
+	 <ul class="news">
+  <?php
+    $posts = get_posts('numberposts=5&category=1');
+    global $post;
+    ?>
+  <?php
+    if($posts): foreach($posts as $post): setup_postdata($post); ?>
+  <li><?php the_time( 'Y/m/d' ); ?>:<a href="<?php the_permalink();?>">
+    <?php the_title(); ?>
+    </a></li>
+  <?php endforeach; endif;
+    ?>
+	</ul>
+</div>-->
+	
+</div>
+<?php include ('side.php'); ?>
+<div id="footer">
+<p>copyright(C) 自律神経失調症は和光市のあせろら整体院　All Rights Reserved</p>
+</div>
+</div>
+</body>
+</html>
